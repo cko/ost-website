@@ -21,27 +21,18 @@ var writeFile = function(filename, content){
   });
 }
 
-var processHtmlFile = function (filename){
+var processPageContent = function (filename){
   fs.readFile(filename, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
     }
-    processBody(filename, data);
-  });
-}
-
-var processBody = function(filename, data){
-  var document = parse5.parse(data);
-  var body = document.childNodes[2].childNodes[2];
-  //body = removeHeaderAndFooter(body);
-  // TODO remove head, header, footer and sidebar
-  var bodyAsText = parse5.serialize(body);
-  fs.writeFile(filename + 'test', bodyAsText, function (err) {
-    if (err) return console.log(err);
-      console.log( filename + ' transformed');
+    var document = utils.parse(data);
+    var pageContent = document.childNodes[2].childNodes[2].childNodes[9];
+    var pageContentAsText = '<div id="wrapper">' + utils.stringify(pageContent) + '</div>';
+    writeFile(filename + '.template', pageContentAsText);
   });
 }
 
 var filename = 'www.opensourcetreffen.de/index.html';
 generateMainTemplate(filename);
-processHtmlFile(filename);
+processPageContent(filename);
