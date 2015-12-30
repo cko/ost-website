@@ -6,7 +6,7 @@
 <p>Die Münchener Open-Source-Treffen bringen Projekte mit ihren Nutzern zusammen und fördern den Kontakt zwischen den Communities. Zusätzlich veranstalten wir regelmäßig Workshops und treffen uns zum Kochen, zum Weißwurstfrühstück und zur Sauna. Auf diesen Seiten erfahrt ihr alles über die Veranstaltungen und könnt euch Präsentationen der vergangenen Treffen herunterladen.</p>
 <h2>Nächste Termine</h2>
 <ul>
-<li>Das nächste Open-Source-Treffen findet statt am&nbsp;<strong>Freitag, 18. Dezember 2015<strong>. Dies ist die jährliche Weihnachtsfeier.</strong><br></strong></li>
+<li>Das nächste Open-Source-Treffen findet statt am&nbsp;<strong>Freitag, 22. Januar 2016.<br></strong>Thema diesmal: simpl4 - universelle Entwicklungsumgebung mit visuellen Editoren (Jürgen Roscher)<strong><br></strong></li>
 </ul>            </div>
 		</div>
 	</div>
