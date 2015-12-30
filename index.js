@@ -8,7 +8,9 @@ var generateMainTemplate = function (document) {
       return console.log(err);
     }
     var document = utils.parse(data);
-    utils.replace(document.childNodes[2].childNodes[2].childNodes[9], utils.createTextNode("{Platzhalter für content}"))
+    var wrapperDiv = document.childNodes[2].childNodes[2].childNodes[9];
+    var pageContent = wrapperDiv.childNodes[1].childNodes[3];
+    utils.replace(pageContent, utils.createTextNode("{Platzhalter für content}"))
     var content = utils.stringify(document);
     writeFile('www.opensourcetreffen.de/templates/main.html', content);
   });
@@ -27,8 +29,9 @@ var processPageContent = function (filename){
       return console.log(err);
     }
     var document = utils.parse(data);
-    var pageContent = document.childNodes[2].childNodes[2].childNodes[9];
-    var pageContentAsText = '<div id="wrapper">' + utils.stringify(pageContent) + '</div>';
+    var wrapperDiv = document.childNodes[2].childNodes[2].childNodes[9];
+    var pageContent = wrapperDiv.childNodes[1].childNodes[3];
+    var pageContentAsText = '<div id="content">' + utils.stringify(pageContent) + '</div>';
     writeFile(filename + '.template', pageContentAsText);
   });
 }

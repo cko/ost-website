@@ -1,7 +1,4 @@
-<div id="wrapper">
-<div id="page">
-	<!-- start content -->
-	<div id="content">
+<div id="content">
 		<div class="post">
 			<h1 class="title">Start</h1>
 			<div class="entry">
@@ -13,20 +10,3 @@
 </ul>            </div>
 		</div>
 	</div>
-	<!-- end content -->
-	<!-- start sidebar -->
-	<div id="sidebar">
-		<ul>
-			<li>
-				<ul>
-					<li></li><li class="active" id="active"><a href="index.html" title="Start">Start</a></li><li><a href="idee.html" title="Idee">Idee</a></li><li><a href="termine.html" title="Termine">Termine</a></li><li><a href="mailinglisten-gruppen.html" title="Mailinglisten &amp; Gruppen">Mailinglisten &amp; Gruppen</a></li><li><a href="Archiv.html" title="Archiv">Archiv</a></li><li><a href="unterstuetzung.html" title="Unterstützung">Unterstützung</a></li><li><a href="kontakt.html" title="Kontakt">Kontakt</a></li><li><a href="danksagung.html" title="Danksagung">Danksagung</a></li><li><a href="impressum.html" title="Impressum">Impressum</a></li><li><a href="Datenschutzerkl%25C3%25A4rung.html" title="Datenschutzerklärung">Datenschutzerklärung</a></li>				</ul>
-			</li>
-			<li>
-				<h2></h2>
-                			</li>
-		</ul>
-	</div>
-	<!-- end sidebar -->
-</div>
-	<div style="clear:both">&nbsp;</div>
-</div>
