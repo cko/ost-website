@@ -1,3 +1,5 @@
+'use strict';
+
 var fs = require('fs');
 var parse5 = require('parse5');
 var utils = require('parse5-utils')
@@ -29,6 +31,18 @@ var processPageContent = function (pathOriginal, pathHarp, filename){
   });
 }
 
+var transformContent = function (){
+  fs.readdir(pathOriginal,function(err, files){
+    if (err) {
+      return console.error(err);
+    }
+    files.filter(function(filename) { return filename.substr(-5) === '.html'; }).forEach( function (filename){
+      var filenameWithoudEnding = filename.slice(0,-5);
+      processPageContent(pathOriginal, pathHarp, filenameWithoudEnding);
+    });
+  });
+};
+
 var writeFile = function(filename, content){
   fs.writeFile(filename, content, function (err) {
     if (err) return console.log(err);
@@ -37,7 +51,9 @@ var writeFile = function(filename, content){
 }
 
 var pathOriginal = 'www.opensourcetreffen.de';
-var pathHarp = 'harp/site'
-var filename = 'index';
+var pathHarp = 'harp/site';
+
+var filename = 'index.html';
 generateMainTemplate(pathOriginal, pathHarp, filename);
-processPageContent(pathOriginal, pathHarp, filename);
+transformContent(pathOriginal, pathHarp);
+
