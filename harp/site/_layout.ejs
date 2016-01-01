@@ -1,19 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- Design by Free CSS Templates, http://www.freecsstemplates.org, Released
 for free under a Creative Commons Attribution 2.5 License -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   
   <head>
-    <link rel="shortcut icon" href="data/themes/opensourcetreffen/images/favicon.ico"
-    type="image/vnd.microsoft.icon">
-    <link rel="icon" href="data/themes/opensourcetreffen/images/favicon.ico"
-    type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="data/themes/opensourcetreffen/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="data/themes/opensourcetreffen/images/favicon.ico" type="image/vnd.microsoft.icon">
     <meta name="google-site-verification" content="jMpzLrowhLitOpmlfxXWRQe2tyGN5ASydMiXcPFJOYk">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="generator" content="pluck 4.7.3">
     <title>Start - Open-Source-Treffen</title>
-    <link href="data/themes/opensourcetreffen/style.css"
-    rel="stylesheet" type="text/css">
+    <link href="data/themes/opensourcetreffen/style.css" rel="stylesheet" type="text/css">
     <meta name="keywords" content="Open-Source-Treffen, München, Café Netzwerk, Vorträge, Community, Open Source, freie Software">
     <meta name="description" content="Die Münchener Open-Source-Treffen bringen Projekte mit ihren Nutzern zusammen und fördern den Kontakt zwischen den Communities.">
   </head>
@@ -21,14 +16,14 @@ for free under a Creative Commons Attribution 2.5 License -->
   <body>
     <!-- start header -->
     <div id="header">
-      <img src="data/themes/opensourcetreffen/images/opensourcetreffen.png"
-      width="282" height="130" alt="Open-Source-Treffen">
+      <img src="data/themes/opensourcetreffen/images/opensourcetreffen.png" width="282" height="130" alt="Open-Source-Treffen">
     </div>
     <!-- end header -->
     <!-- start page -->
     <div id="wrapper">
       <div id="page">
-        <!-- start content -->&lt;%- yield %&gt;
+        <!-- start content -->
+        <%- yield %>
         <!-- end content -->
         <!-- start sidebar -->
         <div id="sidebar">
@@ -36,25 +31,35 @@ for free under a Creative Commons Attribution 2.5 License -->
             <li>
               <ul>
                 <li></li>
-                <li class="active" id="active"><a href="index.html" title="Start">Start</a>
+                <li class="<%- current.source == 'index' ? 'active' : '' %>" >
+                  <a href="index.html" title="Start">Start</a>
                 </li>
-                <li><a href="idee.html" title="Idee">Idee</a>
+                <li class="<%- current.source == 'idee' ? 'active' : '' %>" >
+                  <a href="idee.html" title="Idee">Idee</a>
                 </li>
-                <li><a href="termine.html" title="Termine">Termine</a>
+                <li class="<%- current.source == 'termine' ? 'active' : '' %>" >
+                  <a href="termine.html" title="Termine">Termine</a>
                 </li>
-                <li><a href="mailinglisten-gruppen.html" title="Mailinglisten &amp; Gruppen">Mailinglisten &amp; Gruppen</a>
+                <li class="<%- current.source == 'mailinglisten-gruppen' ? 'active' : '' %>">
+                  <a href="mailinglisten-gruppen.html" title="Mailinglisten &amp; Gruppen">Mailinglisten &amp; Gruppen</a>
                 </li>
-                <li><a href="archiv.html" title="Archiv">Archiv</a>
+                <li class="<%- current.source == 'archiv' ? 'active' : '' %>" >
+                  <a href="archiv.html" title="Archiv">Archiv</a>
                 </li>
-                <li><a href="unterstuetzung.html" title="Unterstützung">Unterstützung</a>
+                <li class="<%- current.source == 'unterstuetzung' ? 'active' : '' %>">
+                  <a href="unterstuetzung.html" title="Unterstützung">Unterstützung</a>
                 </li>
-                <li><a href="kontakt.html" title="Kontakt">Kontakt</a>
+                <li class="<%- current.source == 'kontakt' ? 'active' : '' %>" >
+                  <a href="kontakt.html" title="Kontakt">Kontakt</a>
                 </li>
-                <li><a href="danksagung.html" title="Danksagung">Danksagung</a>
+                <li class="<%- current.source == 'danksagung' ? 'active' : '' %>" >
+                  <a href="danksagung.html" title="Danksagung">Danksagung</a>
                 </li>
-                <li><a href="impressum.html" title="Impressum">Impressum</a>
+                <li class="<%- current.source == 'impressum' ? 'active' : '' %>" >
+                  <a href="impressum.html" title="Impressum">Impressum</a>
                 </li>
-                <li><a href="datenschutz.html" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                <li class="<%- current.source == 'datenschutz' ? 'active' : '' %>" >
+                  <a href="datenschutz.html" title="Datenschutzerklärung">Datenschutzerklärung</a>
                 </li>
               </ul>
             </li>

@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/cko/ost-website#readme",
   "dependencies": {
+    "html": "0.0.10",
     "parse5": "^2.0.2",
-    "parse5-utils": "^1.4.1"
+    "parse5-utils": "^1.4.1",
+    "to-markdown": "^2.0.1"
   }
 }

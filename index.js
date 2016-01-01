@@ -2,7 +2,9 @@
 
 var fs = require('fs');
 var parse5 = require('parse5');
-var utils = require('parse5-utils')
+var utils = require('parse5-utils');
+var toMarkdown = require('to-markdown');
+var html = require("html");
 
 var generateMainTemplate = function (pathOriginal, pathHarp, filename) {
   fs.readFile(pathOriginal + '/' + filename + '.html', 'utf8', function (err,data) {
@@ -14,7 +16,7 @@ var generateMainTemplate = function (pathOriginal, pathHarp, filename) {
     var pageContent = wrapperDiv.childNodes[1].childNodes[3];
     utils.replace(pageContent, utils.createTextNode("<%- yield %>"))
     var content = utils.stringify(document);
-    writeFile( pathHarp + '/' + '_layout.ejs', content);
+    writeFile( pathHarp + '/' + '_layout.ejs', html.prettyPrint(content, {indent_size: 2}));
   });
 }
 
@@ -27,7 +29,7 @@ var processPageContent = function (pathOriginal, pathHarp, filename){
     var wrapperDiv = document.childNodes[2].childNodes[2].childNodes[9];
     var pageContent = wrapperDiv.childNodes[1].childNodes[3];
     var pageContentAsText = '<div id="content">' + utils.stringify(pageContent) + '</div>';
-    writeFile( pathHarp + '/' + filename + '.md', pageContentAsText);
+    writeFile( pathHarp + '/' + filename + '.md', html.prettyPrint(pageContentAsText, {indent_size: 2}));
   });
 }
 
@@ -52,8 +54,7 @@ var writeFile = function(filename, content){
 
 var pathOriginal = 'www.opensourcetreffen.de';
 var pathHarp = 'harp/site';
-
-var filename = 'index.html';
+var filename = 'index';
 generateMainTemplate(pathOriginal, pathHarp, filename);
 transformContent(pathOriginal, pathHarp);
 
