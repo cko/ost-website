@@ -14,9 +14,7 @@
 <h2>Nächste Termine</h2>
 
       <ul>
-        <li>Das nächste Open-Source-Treffen findet statt am&nbsp;<strong>Freitag, 22. Januar 2016.<br></strong>Thema
-          diesmal: simpl4 - universelle Entwicklungsumgebung mit visuellen Editoren
-          (Jürgen Roscher)<strong><br></strong>
+        <li>Das nächste Open-Source-Treffen findet statt am <strong>Freitag, 27. Mai 2016</strong>
         </li>
       </ul>
     </div>

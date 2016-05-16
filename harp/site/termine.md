@@ -18,14 +18,6 @@
         ist kostenlos, eine Anmeldung ist nicht erforderlich. Die Treffen stehen
         unter dem Motto <strong>"Jeder vierte Freitag im Monat für freie Software"</strong>:</p>
       <ul>
-        <li>Freitag, 22. Januar 2016</li>
-        <ul>
-          <li>simpl4 - universelle Entwicklungsumgebung mit visuellen Editoren (Jürgen
-            Roscher)</li>
-        </ul>
-        <li>Freitag, 26. Februar 2016</li>
-        <li>Freitag, 18. März 2016 - Achtung: ausnahmsweise dritter Freitag im Monat</li>
-        <li>Freitag, 22. April 2016</li>
         <li>Freitag, 27. Mai 2016</li>
         <li>Freitag, 24. Juni 2016</li>
         <li>Freitag, 22. Juli 2016 - kleine Geburtstagsfeier zum siebenjährigen Bestehen</li>
@@ -39,16 +31,8 @@
         ist jedoch aus organisatorischen Gründen erforderlich. Details werden auf
         den Mailinglisten angekündigt.</p>
       <ul>
-        <li>Sonntag, 6. März 2016, 13-18 Uhr JavaScript</li>
-        <li>Sonntag, 19. Juni 2016, 13-18 Uhr Scala</li>
+        <li>Sonntag, 19. Juni 2016, 13-18 Uhr: Scala</li>
       </ul>
-      
-<h2>Projekt-Workshop</h2>
-
-      <p>Seit Anfang 2014 gibt es einen RaspberryPi-Workshop, der 14-tägig am Donnerstag
-        stattfindet.</p>
-      <p>Näheres findet ihr im <a title="RaspberryPi Workshop" href="http://www.raspi-workshops.de/">Blog des Workshops</a>
-      </p>
     </div>
   </div>
 </div>

@@ -510,6 +510,25 @@
           Oliver Rath)</li>
       </ul>
       
+<h2>22. Januar 2016</h2>
+
+      <ul>
+        <li>Einführung in simpl4 (Jürgen Roscher)</li>
+      </ul>
+      
+<h2>26. Februar 2016</h2>
+
+      <ul>
+        <li><a href="downloads/20160226-muenchen-fim.pdf">FIM (Fbi Improved): A `swiss army knife' for viewing images (Michele Martone)</a>
+        </li>
+      </ul>
+      
+<h2>18. März 2016</h2>
+
+      <ul>
+        <li>(kein Vortrag)</li>
+      </ul>
+      
 <h2>Vorträge über die Open-Source-Treffen</h2>
 
       <ul>
